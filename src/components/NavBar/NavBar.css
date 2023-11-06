@@ -7,3 +7,5 @@
 .nav_item {
     @apply m-32;
 }
+#name {
+    @apply font-bold uppercase text-2xl text-saffron;
