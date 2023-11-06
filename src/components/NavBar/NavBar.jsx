@@ -16,16 +16,16 @@ const NavBar = () => {
       </Link>
       <ul className="nav_end nav_item">
         <li>
-          <Link className={`${pathname === '/' ? 'text-grny' : 'text-stone-300'}`} href="/">Home</Link>
+          <Link className={`${pathname === '/' ? 'text-grny hover:text-grny' : 'text-stone-300 hover:text-saffron'}`} href="/">Home</Link>
         </li>
         <li>
-          <Link className={`${pathname === '/blog' ? 'text-grny' : 'text-stone-300'}`} href="/blog">Blog</Link>
+          <Link className={`${pathname === '/blog' ? 'text-grny hover:text-grny' : 'text-stone-300 hover:text-saffron'}`} href="/blog">Blog</Link>
         </li>
         <li>
-          <Link className={`${pathname === '/contact' ? 'text-grny' : 'text-stone-300'}`} href="/contact">Contact</Link>
+          <Link className={`${pathname === '/contact' ? 'text-grny hover:text-grny' : 'text-stone-300 hover:text-saffron'}`} href="/contact">Contact</Link>
         </li>
         <li>
-          <Link className={`${pathname === '/whoami' ? 'text-grny' : 'text-stone-300'}`} href="/whoami">WhoAmI</Link>
+          <Link className={`${pathname === '/whoami' ? 'text-grny hover:text-grny' : 'text-stone-300 hover:text-saffron'}`} href="/whoami">WhoAmI</Link>
         </li>
       </ul>
     </div>
