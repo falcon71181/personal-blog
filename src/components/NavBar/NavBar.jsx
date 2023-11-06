@@ -1,9 +1,11 @@
 "use client"
 
 import "./NavBar.css";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 const NavBar = () => {
+  const pathname = usePathname();
   return (
     <div className="nav_bar">
       <Link href="/">
@@ -14,16 +16,16 @@ const NavBar = () => {
       </Link>
       <ul className="nav_end nav_item">
         <li>
-          <Link href="/">Home</Link>
+          <Link className={`${pathname === '/' ? 'text-grny' : 'text-stone-300'}`} href="/">Home</Link>
         </li>
         <li>
-          <Link href="/blog">Blog</Link>
+          <Link className={`${pathname === '/blog' ? 'text-grny' : 'text-stone-300'}`} href="/blog">Blog</Link>
         </li>
         <li>
-          <Link href="/contact">Contact</Link>
+          <Link className={`${pathname === '/contact' ? 'text-grny' : 'text-stone-300'}`} href="/contact">Contact</Link>
         </li>
         <li>
-          <Link href="/whoami">WhoAmI</Link>
+          <Link className={`${pathname === '/whoami' ? 'text-grny' : 'text-stone-300'}`} href="/whoami">WhoAmI</Link>
         </li>
       </ul>
     </div>
