@@ -9,3 +9,14 @@
 }
 #name {
     @apply font-bold uppercase text-2xl text-saffron;
+}
+.nav_end {
+    @apply flex p-5 gap-5 text-stone-200 text-base;
+    & a {
+        text-decoration: none;
+        @apply text-stone-200;
+        &:hover{
+            @apply text-slate-400
+        }
+    }
+}
