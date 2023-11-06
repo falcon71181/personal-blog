@@ -4,3 +4,6 @@
     align-items: center;
     @apply bg-black text-white font-heading h-16;
 }
+.nav_item {
+    @apply m-32;
+}
