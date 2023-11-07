@@ -1,8 +1,9 @@
 import React from "react";
+import { getSortedPosts } from "@/utils/blog";
 import "./blog.css";
-import blogs from "./blogs";
 
 const Blog = () => {
+  const blogs = getSortedPosts();
   return (
     <div className="grid_container">
       <div className="blog">
