@@ -1,11 +1,12 @@
 .nav_bar {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @apply bg-black text-white font-heading h-16;
+    @apply bg-black text-white font-heading h-16 w-[100vw];
 }
 .nav_item {
-    @apply m-32;
+    @apply ml-32 mr-32;
 }
 #name {
     @apply font-bold uppercase text-2xl text-saffron;
