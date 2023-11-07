@@ -3,12 +3,11 @@
   display: grid;
   grid-template-columns: 4fr 1fr;
   grid-template-rows: 1fr;
-  grid-column-gap: 3%;
   }
 
 .blog {
   display:flex;
-  @apply mb-96 pt-10 h-fit;
+  @apply mb-96 pt-10 h-fit w-[95%];
 }
 .blog_post_container {
   display: flex;
@@ -16,11 +15,14 @@
   gap: 3%;
 }
 .blog_post {
-  @apply bg-slate-900 h-52 w-[100%] p-5;
-    display: flex;
-    & img{
-      @apply w-[100%] h-[100%];
-    }
+  @apply bg-slate-950 h-52 w-[100%] p-5 mb-5 rounded-xl border-2 border-stone-700;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 1%;
+  & img {
+    @apply h-40 w-[100%];
+  }
   }
 .blog_post_heading {
     @apply font-heading m-5 text-base text-white;
