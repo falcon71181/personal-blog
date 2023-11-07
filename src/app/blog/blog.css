@@ -1,0 +1,25 @@
+.blog {
+  display: flex;
+  min-height: calc(100vh - 4rem - 3.5rem);
+  @apply pl-24 pr-24 mb-40 pt-10;
+}
+.blog_posts {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1/2%;
+    grid-row-gap: 4%;
+  & .grid-item {
+    @apply h-48 ;
+    & img {
+        @apply w-[100%] h-[100%];
+    }
+  }
+}
+.blog_post_heading {
+    @apply font-heading m-5 text-base text-white;
+}
+.blog_post_des {
+    @apply font-content_font m-5 text-sm text-stone-300;
+}
