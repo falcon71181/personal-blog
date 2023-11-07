@@ -1,44 +1,28 @@
+import React from "react";
 import "./blog.css";
-import Footer from "@/components/Footer/Footer";
+import blogs from "./blogs";
 
-const blog = () => {
+const Blog = () => {
   return (
-    <div className="bg-black pt-24">
+    <div className="grid_container">
       <div className="blog">
-        <div className="blog_posts">
-          <div className="grid-item">
-            <img src="https://cybertix.in/wp-content/uploads/2022/01/Bypassing-403-Protection.jpg"></img>
-          </div>
-          <div className="grid-item">
-            <div className="blog_post_heading">Bypassing 403 Protection To Get Pagespeed Admin Access</div>
-            <div className="blog_post_des">So whenever you visit some restricted resource you generally get 403-Forbidden message. But should you stop right here? Obviously no, always try to break into these restrictions to get sensitive data or access to restricted resource.</div>
-          </div>
-          <div className="grid-item">
-            <img src="https://cybertix.in/wp-content/uploads/2022/01/Bypassing-403-Protection.jpg"></img>
-          </div>
-          <div className="grid-item">
-            <div className="blog_post_heading">Bypassing 403 Protection To Get Pagespeed Admin Access</div>
-            <div className="blog_post_des">So whenever you visit some restricted resource you generally get 403-Forbidden message. But should you stop right here? Obviously no, always try to break into these restrictions to get sensitive data or access to restricted resource.</div>
-          </div>
-          <div className="grid-item">
-            <img src="https://cybertix.in/wp-content/uploads/2022/01/Bypassing-403-Protection.jpg"></img>
-          </div>
-          <div className="grid-item">
-            <div className="blog_post_heading">Bypassing 403 Protection To Get Pagespeed Admin Access</div>
-            <div className="blog_post_des">So whenever you visit some restricted resource you generally get 403-Forbidden message. But should you stop right here? Obviously no, always try to break into these restrictions to get sensitive data or access to restricted resource.</div>
-          </div>
-          <div className="grid-item">
-            <img src="https://cybertix.in/wp-content/uploads/2022/01/Bypassing-403-Protection.jpg"></img>
-          </div>
-          <div className="grid-item">
-            <div className="blog_post_heading">Bypassing 403 Protection To Get Pagespeed Admin Access</div>
-            <div className="blog_post_des">So whenever you visit some restricted resource you generally get 403-Forbidden message. But should you stop right here? Obviously no, always try to break into these restrictions to get sensitive data or access to restricted resource.</div>
-          </div>
+        <div className="blog_post_container">
+          {blogs.map((blog) => (
+            <div className="blog_post" key={blog.id}>
+              <div>
+                <img src={blog.image} alt={blog.title} />
+              </div>
+              <div>
+                <div className="blog_post_heading">{blog.title}</div>
+                <div className="blog_post_des">{blog.description}</div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-      <Footer></Footer>
+      <div className="side_plugin">PPP</div>
     </div>
   );
 };
 
-export default blog;
+export default Blog;
