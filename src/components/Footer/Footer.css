@@ -1,0 +1,7 @@
+.footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    @apply bg-black text-stone-300 w-[100vw] h-14 font-heading;
+}
