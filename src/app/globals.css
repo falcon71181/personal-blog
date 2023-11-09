@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    height: 100%;
+    @apply bg-black;
+}
+
+.home {
+    min-height: calc(100vh - 3.5rem);
+}
