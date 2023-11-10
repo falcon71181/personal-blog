@@ -15,7 +15,7 @@
   gap: 3%;
 }
 .blog_post {
-  @apply bg-slate-950 h-52 w-[100%] p-5 mb-5 rounded-xl border-2 border-stone-700;
+  @apply bg-slate-950 h-52 w-[100%] p-5 mb-5 rounded-xl border-2 border-stone-700 hover:shadow-sm hover:shadow-grny transition-shadow;
     display: grid;
     grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
