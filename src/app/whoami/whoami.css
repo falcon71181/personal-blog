@@ -1,3 +1,8 @@
 .whoami_container {
-  @apply flex flex-col items-center justify-center flex-1 h-[100%] pt-24 text-white;
+  @apply flex flex-col items-center justify-center flex-1 h-[100%] pt-10 text-white;
+}
+.whoami_name {
+  font: Montserrat,sans-serif;
+  color: rgb(193, 228, 124);
+  @apply font-extrabold text-2xl;
 }
