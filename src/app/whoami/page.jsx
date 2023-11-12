@@ -11,7 +11,7 @@ const whoami = () => {
   }
   return (
     <div className="whoami_container">
-      <div className="flex flex-col items-center justify-center flex-1 h-[90%]">
+      <div className="flex flex-col items-center justify-center flex-1 h-[100%]">
         <div className="relative p-8">
           <div className="relative p-10 border-2 border-dashed rounded-full group animate-rotate-reverse border-spacing-4 border-gray-400/50">
             <button
@@ -112,6 +112,9 @@ const whoami = () => {
               <div className="w-full h-full rounded-full active:scale-95 hover:border-gray-400 border-2 bg-[url('/pp.png')] bg-cover transition-all duration-500" />
             </button>
           </div>
+        </div>
+        <div className="whoami_name">
+          ABHAY THAKUR
         </div>
       </div>
     </div>
