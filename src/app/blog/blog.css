@@ -20,6 +20,9 @@
     grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
   grid-column-gap: 1%;
+  & :hover .blog_post_heading{
+    @apply text-saffron;
+  }
   & img {
     @apply h-40 w-[100%];
   }
