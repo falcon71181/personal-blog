@@ -200,7 +200,7 @@ const whoami = () => {
         <li>
         <Link
               className="social_btn left-[45px] bg-cover cursor-pointer "
-              href="https://twitter.com/elonmusk"
+              href="https://app.hackthebox.com/profile/673636"
               target="_blank"
             >
               <Image
