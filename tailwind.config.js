@@ -34,6 +34,7 @@ module.exports = {
     fontFamily: {
       heading: ['Monaco', 'Bitstream Vera Sans Mono', 'Lucida Console'],
       content_font: ['Roboto Condensed', 'sans-serif'],
+      sub_title: ['Roboto Mono', 'monospace'],
     },
   },
   variants: {
