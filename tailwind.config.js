@@ -32,8 +32,7 @@ module.exports = {
       },
     },
     screens: {
-      tablet: "640px",
-      navHide: "800px",
+      navHide: "640px",
       laptop: "1024px",
     },
     fontFamily: {

@@ -2,12 +2,34 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { Dropdown, Space } from "antd";
+import { IoMenu } from "react-icons/io5";
+
+const items = [
+  {
+    label: <a href="/">Home</a>,
+    key: "0",
+  },
+  {
+    label: <a href="/blog">Blog</a>,
+    key: "1",
+  },
+  {
+    label: <a href="/contact">Contact</a>,
+    key: "2",
+  },
+  {
+    label: <a href="/whoami">WhoAmI</a>,
+    key: "3",
+  },
+];
 
 const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="fixed w-full h-10 flex justify-between items-center px-2 laptop:px-20">
+    // Need to make FALCON hide for Phone Size (Responsive)
+    <div className="fixed w-full h-10 flex justify-between items-center px-10 laptop:px-20">
       {/* Logo */}
       <Link href="/">
         <div className="font-bold uppercase text-2xl text-saffron">
@@ -17,7 +39,7 @@ const Navbar = () => {
       </Link>
 
       {/* Navigation Links */}
-      <ul className="flex items-center gap-7">
+      <ul className="h-full hidden navHide:flex items-center gap-5 lapto:gap-7">
         <li>
           <Link href="/" className={getNavLinkClasses(pathname, "/")}>
             Home
@@ -39,6 +61,18 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+
+      <menu className="navHide:hidden h-full flex justify-center items-center gap-2">
+        <Dropdown menu={{ items }} trigger={["click"]}>
+          <a onClick={(e) => e.preventDefault()}>
+            <Space className="h-full flex items-center">
+              <IoMenu style={{ color: "white", fontSize: "30px" }} />
+            </Space>
+          </a>
+        </Dropdown>
+        <div className="text-xl text-white font-semibold">FXX</div>
+      </menu>
+
     </div>
   );
 };
