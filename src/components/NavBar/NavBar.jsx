@@ -70,7 +70,6 @@ const Navbar = () => {
             </Space>
           </a>
         </Dropdown>
-        <div className="text-xl text-white font-semibold">FXX</div>
       </menu>
 
     </div>
