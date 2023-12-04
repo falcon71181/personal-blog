@@ -31,6 +31,11 @@ module.exports = {
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
+    screens: {
+      tablet: "640px",
+      navHide: "800px",
+      laptop: "1024px",
+    },
     fontFamily: {
       heading: ['Monaco', 'Bitstream Vera Sans Mono', 'Lucida Console'],
       content_font: ['Roboto Condensed', 'sans-serif'],
