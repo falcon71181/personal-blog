@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="border-2 border-red-500 flex items-center justify-center bg-black text-stone-300 w-full h-full font-heading">
+    <div className="items-center justify-center bg-black text-stone-300 h-full font-heading hidden footerHide:flex">
       <span className="text-white">&copy; 2023</span>
       <div className="text-white mx-2">
         <Link href="https://github.com/falcon71181" target="_blank" rel="noopener noreferrer">

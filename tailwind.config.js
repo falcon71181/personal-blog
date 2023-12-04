@@ -32,6 +32,7 @@ module.exports = {
       },
     },
     screens: {
+      footerHide: "560px",
       navHide: "640px",
       laptop: "1024px",
     },
