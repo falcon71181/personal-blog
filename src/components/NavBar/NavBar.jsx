@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     // Need to make FALCON hide for Phone Size (Responsive)
-    <div className="fixed w-full h-10 flex justify-between items-center px-10 laptop:px-20">
+    <div className="fixed w-full h-10 flex justify-between items-center bg-black bg-opacity-80 backdrop-blur-md px-10 z-10 laptop:px-20">
       {/* Logo */}
       <Link href="/">
         <div className="font-bold uppercase text-2xl text-saffron">
