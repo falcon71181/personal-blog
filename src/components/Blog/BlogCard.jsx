@@ -3,27 +3,25 @@ import Post_Date from "@/utils/date";
 const BlogCard = (props) => {
     return(
         <div
-            className="flex bg-slate-950 h-40 w-[60%] p-2 mb-5 rounded-xl border-2 border-stone-700 overflow-hidden
-             hover:shadow-sm hover:shadow-grny transition-shadow"
+            className="flex bg-slate-950 h-30 w-[60vw] p-2 mb-5 rounded-xl border-2 border-stone-700 overflow-hidden
+             hover:shadow-sm hover:shadow-grny transition-shadow blogImgHide:h-40 blogImgHide:w-[70vw]"
             key={props.index}
           >
-            {/* Make Image Disappear for Smaller screens */}
             {/* Make Use Of Gradient in Image */}
             <img
             src={props.image}
             alt={props.title}
-            width={170}
-            height={100}
-            className="rounded-lg"
+            className="w-[170px] h-[140px] rounded-lg hidden blogImgHide:flex"
           ></img>
             <div>
-              <div className="font-heading mx-3 text-base text-white">
+              {/* Make it More Responsive */}
+              <div className="font-heading px-3 text-base text-white truncate">
                 {props.title}
               </div>
               <div className="mx-3 text-xs mt-[0.425rem] text-slate-300">
                 <Post_Date date={props.date}></Post_Date>
               </div>
-              <div className="font-content_font my-4 mx-3 text-sm text-stone-300 border-2 border-red-500 h-16 w-[550px] text-ellipsis overflow-hidden ...">
+              <div className="font-content_font my-4 mx-3 text-sm text-stone-300 border-2 border-red-500 h-16 w-[54vw] text-ellipsis overflow-hidden ... hidden navHide:flex">
                 {props.description}
               </div>
             </div>

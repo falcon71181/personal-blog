@@ -6,8 +6,8 @@ const Blog = () => {
   const blogs = getSortedPosts();
 
   return (
-    <div className="pt-20">
-      <div className="flex flex-col items-center justify-center gap-3 w-full">
+    <div className="pt-20 h-full">
+      <div className="flex flex-col items-center justify-center gap-1 w-full blogImgHide:gap-2 laptop:gap-3">
         {blogs.map((blog, index) => (
           <BlogCard
             key={index}

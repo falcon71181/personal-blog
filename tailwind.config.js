@@ -34,6 +34,7 @@ module.exports = {
     screens: {
       footerHide: "560px",
       navHide: "640px",
+      blogImgHide: "900px",
       laptop: "1024px",
     },
     fontFamily: {
