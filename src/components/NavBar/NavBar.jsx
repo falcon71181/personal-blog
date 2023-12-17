@@ -51,12 +51,18 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link href="/contact" className={getNavLinkClasses(pathname, "/contact")}>
+          <Link
+            href="/contact"
+            className={getNavLinkClasses(pathname, "/contact")}
+          >
             Contact
           </Link>
         </li>
         <li>
-          <Link href="/whoami" className={getNavLinkClasses(pathname, "/whoami")}>
+          <Link
+            href="/whoami"
+            className={getNavLinkClasses(pathname, "/whoami")}
+          >
             WhoAmI
           </Link>
         </li>
@@ -71,13 +77,16 @@ const Navbar = () => {
           </a>
         </Dropdown>
       </menu>
-
     </div>
   );
 };
 
 // Helper function to determine NavLink classes
 const getNavLinkClasses = (currentPath, targetPath) =>
-  `${currentPath === targetPath ? "text-grny" : "text-stone-300"} hover:text-saffron`;
+  `${
+    currentPath === targetPath
+      ? "text-grny"
+      : "text-stone-300 hover:text-saffron"
+  }`;
 
 export default Navbar;
