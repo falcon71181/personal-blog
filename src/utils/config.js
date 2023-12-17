@@ -1,5 +1,7 @@
 export const email = "falcon_clutch71@gmail.com";
 
+export const profileName = "Abhay Thakur";
+
 export const socialMedia = [
   {
     name: "GitHub",
