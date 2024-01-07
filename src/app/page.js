@@ -5,7 +5,7 @@ import Footer from '@/components/Footer/Footer'
 export default function Home() {
   return (
     <div>
-      <div className='pt-24 pl-[600px]'>
+      <div className='pt-24 flex justify-center items-center'>
         <img src='./pp.png'></img><span className='text-white text-4xl'>Ara Ara ... What Should I Post Here .. ?</span>
       </div>
       <Footer></Footer>
