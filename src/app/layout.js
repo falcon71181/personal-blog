@@ -1,19 +1,20 @@
-import NavBar from '@/components/NavBar/NavBar';
-import './globals.css'
-import Footer from '@/components/Footer/Footer';
+import NavBar from "@/components/NavBar/NavBar";
+import "./globals.css";
+import Footer from "@/components/Footer/Footer";
 
 export const metadata = {
-  title: 'MyBlog',
-  description: 'Made With &hearts;',
-}
+  title: "MyBlog",
+  description: "Made With &hearts;",
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="h-full bg-black">
-        <NavBar></NavBar>
+      <body className="min-h-full bg-black">
+        <NavBar />
         {children}
-        </body>
+        <Footer />
+      </body>
     </html>
-  )
+  );
 }

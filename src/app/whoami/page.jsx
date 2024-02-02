@@ -32,7 +32,7 @@ const WhoAmI = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center flex-1 h-[100%] pt-10 text-white">
+    <div className="min-h-[88vh] flex flex-col items-center justify-center flex-1 pt-10 text-white">
       <div className="mt-20 flex flex-col items-center justify-center flex-1 h-[100%]">
         <ProfileHero className="relative p-8 z-0" />
 
@@ -53,4 +53,3 @@ const WhoAmI = () => {
 };
 
 export default WhoAmI;
-

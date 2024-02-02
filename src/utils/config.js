@@ -1,4 +1,4 @@
-export const email = "falcon_clutch71@gmail.com";
+export const email = "abhaythakur71181@gmail.com";
 
 export const profileName = "Abhay Thakur";
 
@@ -20,7 +20,7 @@ export const socialMedia = [
   },
   {
     name: "Mail",
-    url: "mailto:falcon_clutch71@protonmail.com",
+    url: `mailto:${email}`,
     img: "/socials/Mail.png",
   },
   {
