@@ -3,7 +3,7 @@ import Post_Date from "@/utils/date";
 const BlogCard = (props) => {
   return (
     <div
-      className="flex bg-slate-950 h-[100%] w-[60vw] p-1 navHide:p-2 mb-5 rounded-xl border-2 border-stone-700 overflow-hidden
+      className="flex bg-slate-950 h-full w-[60vw] p-1 navHide:p-2 mb-5 rounded-xl border-2 border-stone-700 overflow-hidden
              hover:shadow-sm hover:shadow-grny transition-shadow blogImgHide:h-40 blogImgHide:w-[70vw] hover:translate-y-1 hover:translate-x-2"
       key={props.index}
     >
