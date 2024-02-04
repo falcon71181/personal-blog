@@ -1,8 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import remark from "remark";
-import html from "remark-html";
+import { Converter } from "showdown";
 
 const postsDirectory = path.join(process.cwd(), "src/post");
 
@@ -44,14 +43,14 @@ const getSortedPosts = () => {
 };
 
 const getPostContent = async (id) => {
+  let converter = new Converter();
+
   const postFilePath = path.join(postsDirectory, `${id}.md`);
   const postFileContent = fs.readFileSync(postFilePath, "utf8");
 
-  const postContent = matter(postFileContent).content;
+  const postHtmlContent = matter(postFileContent).content;
 
-  const rawContent = await remark().use(html).process(postContent);
-
-  const htmlContent = rawContent.toString();
+  const htmlContent = converter.makeHtml(postHtmlContent);
 
   return { htmlContent };
 };
