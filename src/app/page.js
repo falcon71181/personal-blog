@@ -7,12 +7,14 @@ export default function Page() {
   return (
     <>
       <div className="pt-24 min-h-[88vh] flex flex-col justify-center items-center">
-        <div className="w-[60rem] flex">
-          <Image
-            className="w-52 h-52 rounded-full"
-            src={ProfilePic}
-            alt="Profile Pic"
-          />
+        <div className="max-w-[60rem] flex flex-col laptop:flex-row">
+          <div className="flex items-center justify-center w-full laptop:w-[30rem] border-2 border-red-400">
+            <Image
+              className="rounded-full h-[216px] w-[216px] laptop:w-full laptop:h-full"
+              src={ProfilePic}
+              alt="Profile Pic"
+            />
+          </div>
           <div className="space-y-3 leading-8 text-[#ededef] text-lg ml-4">
             <p>
               👋 Hey, I'm Abhay Thakur, a third-year Computer Science
@@ -28,7 +30,7 @@ export default function Page() {
             <p>Let's build something amazing together! 🚀🌐</p>
           </div>
         </div>
-        <div class="w-[25vw] px-5 mt-10 flex justify-between items-center gap-20">
+        <div class="w-[30rem] px-5 mt-10 flex justify-between items-center gap-20">
           <a
             href="/"
             class="flex px-5 items-center justify-center gap-2 rounded-2xl bg-cyan-200 p-2 font-semibold text-black text-lg hover:bg-cyan-500"
