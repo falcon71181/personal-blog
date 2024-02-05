@@ -7,15 +7,15 @@ export default function Page() {
   return (
     <>
       <div className="pt-24 min-h-[88vh] flex flex-col justify-center items-center">
-        <div className="max-w-[60rem] flex flex-col laptop:flex-row">
-          <div className="flex items-center justify-center w-full laptop:w-[30rem]">
+        <div className="max-w-[60rem] flex flex-col justify-center items-center laptop:flex-row">
+          <div className="flex items-center justify-center w-full laptop:w-[30rem] m-5 laptop:mb-0">
             <Image
               className="rounded-full h-[216px] w-[216px] laptop:w-full laptop:h-full"
               src={ProfilePic}
               alt="Profile Pic"
             />
           </div>
-          <div className="space-y-3 leading-8 text-[#ededef] text-base navHide:text-lg ml-4">
+          <div className="space-y-3 leading-8 text-[#ededef] text-base navHide:text-lg ml-4 p-5 laptop:px-0">
             <p>
               👋 Hey, I'm Abhay Thakur, a third-year Computer Science
               Engineering student at Chitkara University, Rajpura, originally
