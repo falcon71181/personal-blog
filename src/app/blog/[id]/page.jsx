@@ -13,9 +13,9 @@ const BlogPost = async ({ params }) => {
 
   return (
     <div className="pt-20 w-full min-h-[88vh] flex justify-center">
-      <div className="mt-5 flex flex-col gap-3 items-center h-full w-[60vw]">
-        <img src={postMetaData.image} />
-        <h1 className="text-[2.5rem] font-extrabold text-[#ededef]">
+      <div className="mt-5 flex flex-col gap-3 items-center h-full w-[90vw] navHide:w-[80vw] laptop:w-[60vw]">
+        <img src={postMetaData.image} alt={postMetaData.title} />
+        <h1 className="text-[2rem] navHide:text-[2rem] blogImgHide:text-[2.3rem] laptop:text-[2.5rem] font-extrabold text-[#ededef]">
           {postMetaData.title}
         </h1>
         <div className="ml-5 w-full text-stone-300">
@@ -23,7 +23,7 @@ const BlogPost = async ({ params }) => {
         </div>
         <div className="w-full flex flex-col">
           <div
-            className="text-stone-300 leading-9 mt-5 text-lg font-heading"
+            className="text-stone-300 leading-9 mt-5 text-sm navHide:text-base laptop:text-lg font-heading"
             dangerouslySetInnerHTML={{ __html: postMarkDown.htmlContent }}
           />
         </div>
