@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import ProfilePic from "../../public/pp.png";
-import { resumeDownloadLink } from "@/utils/config";
+import { resumeDownloadLink, myIntroduction } from "@/utils/config";
 
 export default function Page() {
   return (
@@ -17,18 +17,9 @@ export default function Page() {
             />
           </div>
           <div className="space-y-3 leading-8 text-[#ededef] text-base navHide:text-lg ml-4 p-5 laptop:px-0">
-            <p>
-              👋 Hey, I'm Abhay Thakur, a third-year Computer Science
-              Engineering student at Chitkara University, Rajpura, originally
-              from the enchanting landscapes of Himachal Pradesh, India.
-            </p>
-            <p>
-              💻 I'm passionate about web development and proudly identify as a
-              full-stack developer. Join me on my coding journey as I navigate
-              the digital realm, turning ideas into functional and sleek
-              websites.
-            </p>
-            <p>Let's build something amazing together! 🚀🌐</p>
+            {myIntroduction.map((introduction) => (
+              <p>{introduction}</p>
+            ))}
           </div>
         </div>
         <div className="w-[30rem] px-5 mt-10 flex flex-col navHide:flex-row items-center gap-5 navHide:gap-10 laptop:gap-20">
