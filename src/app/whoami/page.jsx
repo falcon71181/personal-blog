@@ -40,12 +40,12 @@ const WhoAmI = () => {
           {profileName}
         </div>
 
-        <ProfileContacts className="whoami_socials flex flex-row flex-wrap justify-between p-2" />
+        <ProfileContacts className="flex flex-row flex-wrap justify-between p-2" />
 
         <div className="font-sub_title text-slate-100 mt-1 px-5">
           I'm a third-year college student currently pursuing my bachelor's
           degree in <strong className="text-white">Computer Science</strong>.
-          <div className="text-center" ref={textRef}></div>
+          <div className="text-center hidden laptop:block" ref={textRef}></div>
         </div>
       </div>
     </div>
