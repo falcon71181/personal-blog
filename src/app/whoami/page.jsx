@@ -32,17 +32,17 @@ const WhoAmI = () => {
   }, []);
 
   return (
-    <div className="min-h-[88vh] flex flex-col items-center justify-center flex-1 pt-10 text-white">
-      <div className="mt-20 flex flex-col items-center justify-center flex-1 h-[100%]">
+    <div className="min-h-[88vh] w-full flex flex-col items-center justify-center flex-1 pt-10 text-white">
+      <div className="mt-20 flex flex-col items-center justify-center flex-1">
         <ProfileHero className="relative p-8 z-0" />
 
         <div className="text-[#c1e47c] uppercase font-extrabold text-2xl font-montserrat text-profile_name mt-5">
           {profileName}
         </div>
 
-        <ProfileContacts className="whoami_socials flex flex-row justify-between p-2" />
+        <ProfileContacts className="whoami_socials flex flex-row flex-wrap justify-between p-2" />
 
-        <div className="font-sub_title text-slate-100 mt-1">
+        <div className="font-sub_title text-slate-100 mt-1 px-5">
           I'm a third-year college student currently pursuing my bachelor's
           degree in <strong className="text-white">Computer Science</strong>.
           <div className="text-center" ref={textRef}></div>
