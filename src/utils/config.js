@@ -1,6 +1,8 @@
 export const email = "abhaythakur71181@gmail.com";
 
 export const profileName = "Abhay Thakur";
+export const resumeDownloadLink =
+  "https://github.com/falcon71181/personal-blog/raw/main/public/AbhayThakur.pdf";
 
 export const socialMedia = [
   {

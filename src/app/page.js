@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import ProfilePic from "../../public/pp.png";
+import { resumeDownloadLink } from "@/utils/config";
 
 export default function Page() {
   return (
@@ -30,25 +31,21 @@ export default function Page() {
             <p>Let's build something amazing together! 🚀🌐</p>
           </div>
         </div>
-        <div class="w-[30rem] px-5 mt-10 flex flex-col navHide:flex-row items-center gap-5 navHide:gap-10 laptop:gap-20">
+        <div className="w-[30rem] px-5 mt-10 flex flex-col navHide:flex-row items-center gap-5 navHide:gap-10 laptop:gap-20">
           <a
-            href="/"
-            class="flex px-5 items-center justify-center gap-2 rounded-2xl bg-cyan-200 p-2 font-semibold text-black text-lg hover:bg-cyan-500"
+            href={resumeDownloadLink}
+            target="_blank"
+            className="flex px-5 items-center justify-center gap-2 rounded-2xl bg-cyan-200 p-2 font-semibold text-black text-lg hover:bg-cyan-500"
           >
             Download Resume
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
               stroke="currentColor"
-              class="h-6 w-6"
+              className="h-6 w-6"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-              />
+              <path d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
             </svg>
           </a>
           <Link
