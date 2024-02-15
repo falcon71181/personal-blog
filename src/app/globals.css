@@ -6,3 +6,76 @@ body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom, #212324 0%, black 100%);
 }
+
+.custom-markdown a {
+  text-decoration: none;
+  color: #ffa977;
+  text-shadow: 0 0 25px rgba(248, 178, 87, 0.5);
+}
+
+.custom-markdown a:hover {
+  color: #347deb;
+}
+
+.custom-markdown code {
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.custom-markdown h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.custom-markdown h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 1.25em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.custom-markdown h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.custom-markdown p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.custom-markdown ul {
+  display: block;
+  list-style-type: square;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
+.custom-markdown ol {
+  display: block;
+  list-style-type: decimal;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}

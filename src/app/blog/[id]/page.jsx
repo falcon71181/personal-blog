@@ -23,7 +23,7 @@ const BlogPost = async ({ params }) => {
         </div>
         <div className="w-full flex flex-col">
           <div
-            className="text-stone-300 leading-9 mt-5 text-sm navHide:text-base laptop:text-lg font-heading"
+            className="custom-markdown text-stone-300 leading-9 mt-5 text-sm navHide:text-base laptop:text-lg font-heading"
             dangerouslySetInnerHTML={{ __html: postMarkDown.htmlContent }}
           />
         </div>

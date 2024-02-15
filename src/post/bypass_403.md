@@ -45,7 +45,8 @@ Please note that bypassing 403 restrictions may be illegal or against the terms 
 For more information and detailed examples, you can refer to the following resources:
 
 - [GitHub - yunemse48/403bypasser](https://github.com/yunemse48/403bypasser)
-- [Infosec Write-ups - 403 Forbidden Bypass Leads to Hall of Fame](https://infosecwriteups.com/403-forbidden-bypass-leads-to-hall-of-fame-ff61ccd0a71e)- [GitHub - iamj0ker/bypass-403](https://github.com/iamj0ker/bypass-403)
+- [Infosec Write-ups - 403 Forbidden Bypass Leads to Hall of Fame](https://infosecwriteups.com/403-forbidden-bypass-leads-to-hall-of-fame-ff61ccd0a71e)
+- [GitHub - iamj0ker/bypass-403](https://github.com/iamj0ker/bypass-403)
 
 &nbsp;
 
