@@ -3,7 +3,7 @@ export const email = "abhaythakur71181@gmail.com";
 export const profileName = "Abhay Thakur";
 
 export const resumeDownloadLink =
-  "https://drive.google.com/file/d/1TxuL_bQkx-FIgALPf-e4rBIc4QrGzNbv/view";
+  "https://drive.google.com/file/d/1_5WvyzrktA_OSwdlBL6qaRbyAVAD7hAj/view?pli=1";
 
 export const myIntroduction = [
   "👋 Hey, I'm Abhay Thakur, a third-year Computer Science Engineering student at Chitkara University, Rajpura, originally from the enchanting landscapes of Himachal Pradesh, India.",
