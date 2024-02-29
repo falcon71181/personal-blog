@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import ProfilePic from "../../public/pp.png";
+import Script from "next/script";
 import { resumeDownloadLink, myIntroduction } from "@/utils/config";
 
 export default function Page() {
@@ -47,6 +48,11 @@ export default function Page() {
           </Link>
         </div>
       </div>
+      <Script
+        data-goatcounter="https://falcon71181.goatcounter.com/count"
+        async
+        src="//gc.zgo.at/count.js"
+      ></Script>
     </>
   );
 }
